@@ -1,0 +1,628 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        transition: .2s linear;
+
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background: linear-gradient(45deg, black, #130113ed);
+        
+    }
+
+    .header {
+        height: 100vh;
+        width: 100vw;
+        background-image: url("img/D.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* .logo {
+        height: 80px;
+        width: 10vw;
+        display: flex;
+    } */
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        padding: 6px 8px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        /* list-style-type: none; */
+        margin: 10px 20px;
+        padding: 8px;
+        position: relative;
+        top: 12px;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        /* transition: 0.5s; */
+
+    }
+
+    nav ul li a {
+        text-decoration: none;
+
+    }
+
+    nav ul li :hover {
+        /* background-color: rgba(27, 27, 131, 0.699); */
+        color: white;
+        border-radius: 10px;
+
+
+    }
+
+    .text {
+        /* border: 2px solid red; */
+        height: 160px;
+        width: 295px;
+        margin: 50px 26px;
+        font-size: 28px;
+        position: absolute;
+        top: 174px;
+    }
+
+    .text h1 {
+        font-size: 55px;
+        margin-top: 10px;
+    }
+
+    .text h1 span {
+        color: rgb(27, 27, 131);
+    }
+
+    .about {
+        padding: 60px 0;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .aboutc1 {
+        flex-basis: 35%;
+    }
+
+    .aboutc1 img {
+        height: 380px;
+        width: 80%;
+        border-radius: 12px;
+        margin-left: 20px;
+        box-shadow: 10px 4px 8px 2px rgba(209, 172, 230, 0.938);
+    }
+
+    .aboutc2 {
+        flex-basis: 60%;
+        color: whitesmoke;
+    }
+
+    .me {
+        font-size: 50px;
+        font-weight: 400px;
+        color: whitesmoke;
+        margin: 0px 38px;
+    }
+
+    .tab {
+        display: flex;
+        margin: 20px 0;
+
+    }
+
+    .tab .aa {
+        margin-right: 40px;
+        font-size: 20px;
+        font-weight: 200px;
+        cursor: pointer;
+        position: relative;
+
+    }
+
+    .tab ::after {
+        content: ' ';
+        width: 0;
+        height: 4px;
+        background: black;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.8s;
+        border-radius: 10px;
+
+    }
+
+    .aa.active-link::after {
+        width: 60%;
+    }
+
+
+    .tabc ul li {
+        margin: 12px 0px;
+
+
+
+    }
+
+    .tabc ul li span {
+        color: rgb(21, 21, 189);
+        font-size: 18px;
+    }
+
+    .tabc {
+        display: none;
+
+
+    }
+
+    .tabc.small {
+        display: block;
+    }
+
+    .services {
+
+        padding: 30px 0px;
+
+    }
+
+    .services-list {
+        /* display: flex;
+        margin: 20px 0px;
+        padding: 0px 12px; */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+
+    }
+
+    .services-list div {
+        background-color: rgb(29, 27, 27);
+        border-radius: 10px;
+        font-size: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 400px;
+        margin-left: 8px;
+        padding: 20px 8px;
+        height: 110px;
+        color: white;
+        transition: background 0.5s, transform 0.5s;
+
+
+
+    }
+
+
+    .services-list div h2 {
+        text-align: center;
+        margin-bottom: 6px;
+    }
+
+    .services-list div a {
+        color: white;
+        font-size: 18px;
+        font-weight: 100px;
+
+    }
+
+    .services-list div:hover {
+        background: linear-gradient(150deg, #380450, #000000fc , #380450 , #000000fc);
+        /* it is use for make content move up and after this we have to enter transitions*/
+        transform: translateY(-10px);
+    }
+
+    .slider {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .slider .img1 {
+        width: 70vh;
+        height: auto;
+        display: none;
+        transition: transform 2s;
+        z-index: 2;
+        position: absolute;
+        left: 36vh;
+        border: 20px solid white;
+        
+    }
+
+    .sliderButton {
+        display: none;
+        position: absolute;
+        left: 36vh;
+        top: 120vh;
+        z-index: 2;
+    }
+
+    .A {
+        left: 10vh;
+        position: relative;
+        top: 26vh;
+        left: -120vh;
+    }
+
+    .act {
+        position: absolute;
+        left: 10vh;
+    }
+
+   
+
+    .contact-left {
+        flex-basis: 35%;
+    }
+
+    .contact-right {
+        flex-basis: 60%;
+    }
+
+    .contact-left p {
+        margin: 30px 45px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+    }
+
+    .social-icons {
+        margin: 30px 45px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+    }
+
+    .fa-brands {
+        color: white;
+    }
+
+    .social-icons i {
+        margin-right: 4px;
+    }
+
+    .btn.btn2 {
+        display: inline-block;
+        background: rgb(231, 16, 45);
+        color: white;
+        text-decoration: none;
+        position: absolute;
+        left: 46px;
+        padding: 12px 12px;
+        border-radius: 6px;
+    }
+
+    .contact-right {
+        width: 100%;
+
+    }
+
+    form input,
+    form textarea {
+        width: 90%;
+        border: 0;
+        outline: none;
+        background: rgb(32, 32, 32);
+        padding: 15px;
+        margin: 15px 0;
+        color: white;
+        font-size: 18px;
+        border-radius: 6px;
+
+    }
+
+    form .btn2 {
+        padding: 14px 60px;
+        font-size: 18px;
+        margin: 200px 490px;
+        cursor: pointer;
+        /* outline: none; */
+        border: 0;
+
+    }
+
+    .copyright {
+        width: 100%;
+        text-align: center;
+        padding: 28px 0;
+        background: rgb(32, 32, 32);
+        font-weight: 300;
+        margin-top: 60px;
+    }
+
+    nav .fas {
+        display: none;
+    }
+
+    nav .fas1 {
+        display: none;
+    }
+
+    .work-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+    }
+
+    .work {
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .work img {
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.8s;
+    }
+
+    .layer {
+        width: 100%;
+        height: 0;
+        background: linear-gradient(150deg, #20033ceb, #000000e8 , #20033ce6, #000000e6);
+        color: white;
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* padding: 0 40px; */
+        text-align: center;
+        font-size: 16px;
+        transition: height 0.8s;
+    }
+
+    .layer h3 {
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .layer a {
+        margin-top: 20px;
+        color: rgb(230, 25, 69);
+        font-size: 20px;
+        line-height: 60px;
+        background: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .work:hover img {
+        transform: scale(1.1);
+    }
+
+    .work:hover .layer {
+        height: 100%;
+    }
+
+    .btn {
+        display: block;
+        margin: 50px auto;
+        width: fit-content;
+        border: 2px solid rgb(230, 25, 69);
+        padding: 12px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: white;
+        transition: background 0.8s;
+    }
+
+    .btn:hover {
+        background: rgb(230, 25, 69);
+    }
+
+    #portfolie {
+        padding: 50px 0px;
+    }
+
+    .sliderButton-act1 {
+        background: rgb(230, 25, 69);
+        color: white;
+        padding: 1rem 1rem;
+        border: 2px solid rgb(230, 25, 69);
+        border-radius: 6px;
+    }
+
+    .sliderButton {
+        background: rgb(230, 25, 69);
+        color: white;
+        padding: 0rem 1rem;
+        border: 2px solid rgb(230, 25, 69);
+        border-radius: 6px;
+    }
+
+    /* -------------------css for small screens----------------- */
+    @media only screen and (max-width: 600px) {
+        .header {
+            background-image:linear-gradient(0deg, rgb(0 0 0 / 14%), rgb(0 0 0 / 44%)) , url("img/star.jpeg");
+            height: 60vh;
+            width: 100%;
+        }
+
+        .text {
+            margin-top: -14%;
+            font-size: 20px;
+        }
+
+        .text h1 {
+            font-size: 30px;
+        }
+
+        nav .fas {
+            display: block;
+            color: white;
+
+        }
+
+        nav .fas1 {
+            display: block;
+            color: white;
+        }
+
+        nav ul {
+            background: linear-gradient(45deg, #000000f5, #00000029);
+            position: fixed;
+            top: 0;
+            right: -200px;
+            width: 200px;
+            height: 100vh;
+            padding-top: 50px;
+            z-index: 2;
+            transition: right 0.5s;
+        }
+        nav ul li a{
+            color: white;
+        }
+
+        nav ul li {
+            display: block;
+            margin: 60px;
+        }
+
+        nav ul .fas {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            cursor: pointer;
+        }
+
+        nav .fas1 {
+            position: absolute;
+            top: 30px;
+            right: 60px;
+            cursor: pointer;
+        }
+
+        form .btn2 {
+            padding: 14px 60px;
+            font-size: 18px;
+            margin: 6px 218px;
+            cursor: pointer;
+            /* outline: none; */
+            border: 0;
+
+        }
+
+        .row {
+            margin-left: 18px;
+        }
+
+        .aboutc2 {
+            font-size: 18px;
+        }
+
+        /* This is use for make image and about me look perfect */
+        .aboutc1,
+        .aboutc2 {
+            flex-basis: 100%;
+        }
+
+        .aboutc1 {
+            margin-right: 18px;
+            margin-bottom: 38px;
+        }
+
+        .aboutc2 {
+            font-size: 18px;
+        }
+
+        .contact-left,
+        .contact-right {
+            flex-basis: 100%;
+        }
+
+        #button,
+        .btn {
+            margin-left: 120px;
+            margin-top: -56px;
+            /* position: absolute;
+         left: 30px;
+         bottom: 40px; */
+        }
+
+        form .btn2 {
+            margin-left: 120px;
+            margin-top: 186px;
+        }
+
+        .slider .img1 {
+            width: auto;
+            height: 32vh;
+            display: none;
+            transition: transform 2s;
+            z-index: 2;
+            position: absolute;
+            left: -1vh;
+            top: 196vh;
+            border: 20px solid white;
+         
+        }
+
+        .sliderButton {
+            /* display: none; */
+            position: absolute;
+            display: none;
+            left: 3vh;
+            z-index: 2;
+
+        }
+
+        .A {
+            left: 10vh;
+            position: relative;
+            top: 14vh;
+            left: -16vh;
+        }
+
+        @media only screen and (max-width:400px) {
+            .slider .img1 {
+                width: auto;
+                height: 32vh;
+                display: none;
+                transition: transform 2s;
+                z-index: 2;
+                position: absolute;
+                left: 1vh;
+                top: 250vh;
+                border: 20px solid white;
+                
+            }
+
+            .A {
+                left: 10vh;
+                position: relative;
+                top: 12vh;
+                left: -22vh;
+
+            }
+
+
+
+
+
+        }
+    }

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e036081ab6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header" id="home">
+
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li> <a href="#home">Home</a></li>
+                    <li> <a href="#about">about</a></li>
+                    <li> <a href="#services">services</a></li>
+                    <li> <a href="#portfolie">MyWork</a></li>
+                    <li> <a href="#contact">contact</a></li>
+                   
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas1" onclick="openmenu()"></i>
+               
+            </nav>
+            <div class="text">
+                <b>
+                    <p>Front End Developer</p>
+                </b>
+                <h1>Hi, I'm <span>Vasu</span><br> from India</h1>
+            </div>
+        </div>
+
+    </div>
+    <!------------ about ------------->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutc1">
+                    <img src="img/IMG_20230329_103120.jpg">
+                </div>
+                <div class="aboutc2">
+                    <h1 class="me">About Me</h1>
+                    <p>Hello everyone my name is Gohil vasu and i am from gujarat , i am student at gmit , currently i
+                        am studying in 7th sem degree computer engineering and i have good knowleg of front-end
+                        development</p>
+                     
+
+                    <div class="tab">
+                        <p class="aa active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="aa" onclick="opentab('experience')">Experience</p>
+                        <p class="aa" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tabc small" id="skills">
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>JAVASCRIPT</li>
+                            <li>BOOTSTRAP</li>
+
+                          
+                        </ul>
+
+                    </div>
+                    <div class="tabc" id="experience">
+                        <ul>
+
+                            <li><span>2022-2023</span><br>Strat learning JAVASCRIPT and BOOTSTRAP</li>
+                            <li><span>2021-2022</span><br>Strat learning HTML and CSS</li>
+                          
+
+
+                        </ul>
+
+                    </div>
+                    <div class="tabc" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Currently studying in GMIT(Gyanmanjari institute of technology)
+                            </li>
+                            <li><span>2020</span><br>Gyanmanjari institute of technology(GMIT) </li>
+                            <li><span>2018</span><br>Gyanmanjari Morden highscool</li>
+                           
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -----------services---------------->
+
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="me">my services</h1>
+            <div class="services-list">
+
+                <div>
+                    <h2>web Design</h2>
+                    <p>I have front-end skills like HTML, CSS and javascript for good web designing</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+
+                    <h2>UI Designing</h2>
+                    <p>I am good at BOOTSTRAP , JAVASCRIPT and template for designing</p>
+                  
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+   
+    <!------------------------ portfolie ---------------------------->
+    <div id="portfolie">
+        <div class="container">
+            <div class="me">My work</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/c4.jpg" alt="">
+                    <div class="layer">
+                        <h3> combine two pdf</h3>
+                        <p>In this Project user combine two pdf . This services is very user friendly and easily
+                            understandable and after combine process it is quickly download</p>
+                       
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/c2.jpg" alt="">
+                    <div class="layer">
+                        <h3>News junkey</h3>
+                        <p>This project is simply about see News very easily we have to enter our interested
+                            topic which we want to see
+                        </p>
+                      
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/c4.jpg" alt="">
+                    <div class="layer">
+                        <h3>todolist</h3>
+                        <p>This project helps you create a list of things you want to do throughout the day and using
+                            this we can easily remember our daily routine</p>
+                       
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!------------------------ contact ------------------------------->
+    <!-- In downcoad CV button we have use liveserver it is work on it  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="me">Contact Me</h1>
+                    <p>vasujgohil318@gmail.com</p>
+                    <p>6356434725</p>
+                    <div class="social-icons">
+                      
+                        <a href="https://instagram.com/vasu.900?igshid=MzRIODBiNWFIZA==" target="_blank"> <i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/contactvasugohil" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                  
+                        <a href="https://drive.google.com/file/d/1y-rvBTfXy4X85Kkp_8tikv8O2xCBoXtX/view?usp=drive_link"
+                        download id="#button" class="btn btn2" target="_blank">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>copyright &copy; vasu , Made with by Easy Tutarial </p>
+        </div>
+    </div>
+    
+    <script>
+
+        var tabs = document.getElementsByClassName("aa");
+        var tabcs = document.getElementsByClassName("tabc");
+
+        function opentab(tabname) {
+           
+            for (let tab of tabs) {
+                tab.classList.remove("active-link");
+            }
+            for (let tabc of tabcs) {
+                tabc.classList.remove("small");
+            }
+            event.target.classList.add("active-link");
+            document.getElementById(tabname).classList.add("small");
+
+        }
+    </script>
+    <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+
+   
+
+
+
+
+</script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw_1PUt2nxQCnslq28ZKrexwvseElQRVk8Whv5ysaaAE-4699fWpWsZ3ptOgLVrRync/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response), form.reset())
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
